@@ -13,13 +13,32 @@ console.log('##### Challenge 1 #####');
 //
 // Console out the numbers from 1-20, but only if they're divisible by 3.
 // Hint: Use `if` and a modulus operation.
+let output = [];
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
+for (const value of number) {
+    if (value % 3 === 0) {
+        output += value;
+    }
+}
+console.log(output)
 
 
 console.log('##### Challenge 2 #####');
 // 2.
 //
 // Console out the numbers from 1-20. BACKWARDS.
+// let output1 = [];
+const number1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+// for (const value1 of number1) {
+//     if (value1 ) {
+//         output1 += value1;
+//     }
+// }
+console.log(number1.reverse())
+
+
 
 
 
@@ -29,7 +48,13 @@ console.log('##### Challenge 3 #####');
 // For the string 'Boy howdy am I good at this!', console out the letters
 // individually.
 let string3 = 'Boy howdy am I good at this!';
-
+const space = ' ';
+for (let i = 0; i < string3.length; i++) {
+    const char = string3[i];
+    //  string3 += char + space + 1;
+console.log(char)
+// console.log(string3)
+}
 
 
 console.log('##### Challenge 4 #####');
@@ -47,6 +72,13 @@ console.log('##### Challenge 5 #####');
 // For the string 'Am I the best?', console out the letters individually, AND
 // UPPERCASED.
 let string5 = 'Am I the best?';
+for (let i = 0; i < string5.length; i++) {
+     const char = string5[i] ;
+     const char2 = char.toUpperCase();
+    
+console.log(char2)
+
+}
 
 
 
@@ -56,6 +88,16 @@ console.log('##### Challenge 6 #####');
 // For the string 'Whoa, I am the best!', console out the letters individually,
 // but also capitalize the letters in the third word.
 let string6 = 'Whoa, I am the best!';
+for (let i = 0; i < string6.length; i++) {
+    const char = string6[i] ;
+    const char3 = char.toLowerCase();
+    
+    //const char4 = char3[2].toUpperCase()
+   
+console.log(char3)
+
+}
+
 
 
 
@@ -66,6 +108,14 @@ console.log('##### Challenge 7 #####');
 //  individually, but backwards. That is, the first console log should be
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = 'I am become death, destroyer of worlds.';
+let output7 = ' ';
+for (let i = 0; i < string7.length; i ++) {
+    const str7 = string7[i];
+    new StringBuilder(str7).reverse().toString()
+    
+    output7 += str7;
+    console.log(str7)
+}
 
 
 
